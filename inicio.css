@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    height: 100vh;
+    /* Alto del cuerpo de la página */
+    display: flex;
+    /* Utilizamos Flexbox para distribuir el contenido */
+    flex-direction: row;
+    /* Distribuimos el contenido en fila */
+}
+
+
+.container-inicio {
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(15, 15, 15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 5px;
+}
+
+.img-inicio img {
+    width: 120px;
+}
+
+.texto-inicio {
+    color: white;
+}
+
+.direccion-inicio svg {
+    color: white;
+    width: 25px;
+    height: 25px;
+}
+
+.direccion-inicio {
+    color: white;
+    border: none;
+}
+
+.email-button {
+    background-color: rgb(15, 15, 15);
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 1px 2px;
+    cursor: pointer;
+}
+
+.email-button svg {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.email-button:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+}
+
+.button-github svg {
+    vertical-align: middle;
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+
+.button-github svg :hover {
+    color: rgb(11, 176, 226);
+}
+
+.options-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+}
+
+.copyrigth {
+    color: white;
+    text-align: center;
+}
+
+
+.container-information {
+    background-color: rgb(15, 15, 15);
+    width: calc(100% - 20%);
+    height: 100vh;
+    margin-left: 20%;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-sobremi {
+    color: white;
+}
+
+/* Estilos para el contenedor de imágenes */
+.image-container {
+    position: relative;
+    width: calc(80% - 20px);
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 800px;
+    /* Ancho del contenedor */
+    height: 400px;
+    /* Alto del contenedor */
+    overflow: hidden;
+}
+
+/* Estilos para las imágenes */
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s;
+    /* Transición para la opacidad */
+}
+
+/* Estilos para la imagen activa */
+.image.active {
+    opacity: 1;
+}
+
+/* Estilos para la imagen inactiva */
+.image:not(.active) {
+    opacity: 0;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    /* Espacio entre las tarjetas */
+}
+
+.tarjeta {
+    position: relative;
+    background-color: rgba(15, 15, 15, 1);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 230px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.tarjeta h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el audio, inicialmente oculto */
+.tarjeta audio {
+    width: 100%;
+    margin-top: 15px;
+    display: none;
+}
+
+.separador {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+/* CSS */
+.progress-container {
+    max-width: 400px;
+    margin: 40px auto;
+  }
+  
+  .progress {
+    position: relative;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .progress-inner {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s;
+  }
+  
+  .html {
+    background-color: #2196F3;
+  }
+  
+  .css {
+    background-color: #8BC34A;
+  }
+  
+  .js {
+    background-color: #FF9800;
+  }
+  
+  .progress span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 14px;
+  }
+
+/* CSS */
+.card-proyect {
+    background-color: rgb(15, 15, 15); /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    border: 1px solid #fff; /* Borde blanco */
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-proyect img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .card-content-proyect{
+    padding: 20px;
+  }
+  
+  .card-title-proyect{
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card-btn-proyect{
+    background-color: rgba(15, 15, 15, 1); /* Botón blanco */
+    color: #fff; /* Texto negro */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #fff; /* Borde blanco */
+
+  }
+  
+  .contenedor-proyectos {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    /* Espacio entre las tarjetas */
+}
+
+.contact-form {
+    background-color: rgba(15, 15, 15, 1); /* Black background */
+    color: #FFFFFF; /* White text */
+    padding: 20px;
+    border: 1px solid #FFFFFF; /* White border */
+  }
+  
+ .contact-form label {
+    color: #FFFFFF; /* White text for labels */
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+ .contact-form input,.contact-form textarea {
+    background-color: rgba(15, 15, 15, 1); /* Black background for input fields */
+    color: #FFFFFF; /* White text for input fields */
+    border: 1px solid #FFFFFF; /* White border for input fields */
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+ .contact-form input[type="submit"] {
+    background-color: rgb(15, 15, 15); /* White background for submit button */
+    color: #FFFFFF; /* Black text for submit button */
+    border: 1px solid #FFFFFF; /* White border for submit button */
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+ .contact-form input[type="submit"]:hover {
+    background-color: #CCCCCC; /* Light gray background for submit button on hover */
+  }
+  
+ .form-group {
+    margin-bottom: 20px;
+  }
+  
+ .form-group label {
+    margin-bottom: 10px;
+  }
+  
+ .form-group input,.form-group textarea {
+    margin-bottom: 20px;
+  }
+
+  @keyframes appearDisappear {
+    0% {
+      opacity: 0; /* Empieza completamente invisible */
+      transform: translateY(20px); /* Empieza desplazado hacia abajo */
+    }
+    50% {
+      opacity: 1; /* A mitad de la animación, completamente visible */
+      transform: translateY(0); /* Vuelve a la posición original */
+    }
+    100% {
+      opacity: 0; /* Termina completamente invisible */
+      transform: translateY(-20px); /* Termina desplazado hacia arriba */
+    }
+  }
+
+  .animation{
+    animation: appearDisappear 4s infinite;
+  }
